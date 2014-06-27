@@ -1,0 +1,28 @@
+/*
+Sidebars
+---------------------------------------------------------------------------------------------------- */
+
+.sidebar {
+    font-size: $font-size-h6;
+    
+    li {
+        border-bottom: 1px dotted $color-border-mid;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+
+    p:last-child,
+    ul > li:last-child {
+        margin-bottom: 0
+    }
+
+    .widget {
+        background-color: $color-bg-content;
+        margin-bottom: 40px;
+        padding: 40px;
+
+        @include breakpoint('small') {
+            padding: 0;
+        }
+    }
+}

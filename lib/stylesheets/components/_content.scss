@@ -1,0 +1,187 @@
+/*
+Content Area
+---------------------------------------------------------------------------------------------------- */
+
+/* Entries
+--------------------------------------------- */
+
+.entry {
+    margin-bottom: 40px;
+    padding: 50px 60px;
+
+    @include breakpoint('small') {
+        padding: 0;
+    }
+}
+
+.content .entry {
+    background-color: $color-bg-content;
+}
+
+.entry-content {
+
+    ol,
+    ul {
+        margin-bottom: 28px;
+        margin-left: 40px; 
+    }
+
+    ol > li {
+        list-style-type: decimal;
+    }
+
+    ul > li {
+        list-style-type: disc;
+    }
+
+    ol ol,
+    ul ul {
+        margin-bottom: 0;
+    }
+
+    code {
+        background-color: $color-bg-nav-primary;
+        color: $color-font-light;
+    }
+}
+
+
+/* Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+    font-size: $font-size-h6;
+    margin-bottom: 0;
+}
+
+.entry-header .entry-meta {
+    margin-bottom: 24px;
+}
+
+.entry-footer .entry-meta {
+    border-top: 2px solid $color-border-lighter;
+    padding-top: 24px;
+}
+
+.entry-categories,
+.entry-tags {
+    display: block;
+}
+
+.entry-comments-link::before {
+    content: "\2014";
+    margin: 0 6px 0 2px;
+}
+
+/* Pagination
+--------------------------------------------- */
+
+.pagination {
+    clear: both;
+    margin: 40px 0;
+}
+
+.adjacent-entry-pagination {
+    margin-bottom: 0;
+}
+
+.archive-pagination {
+    li {
+        display: inline;
+
+        a {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+            font-size: $font-size-h6;
+            padding: 8px 12px;
+
+            &:hover {
+                background-color: $color-link-base;
+            }
+
+            @include breakpoint('small') {
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .active a {
+        background-color: $color-link-base;
+    }
+}
+
+/* Comments
+--------------------------------------------- */
+
+.comment-respond,
+.entry-comments,
+.entry-pings {
+    background-color: $color-bg-content;
+    margin-bottom: 40px;
+
+    @include breakpoint('small') {
+        padding: 0;
+    }
+}
+
+.comment-respond,
+.entry-pings {
+    padding: 40px 40px 16px;
+}
+
+.entry-comments {
+    padding: 40px;
+}
+
+.comment-header {
+    font-size: $font-size-h6;
+}
+
+li.comment {
+    background-color: $color-bg-base;
+    border: 2px solid $color-border-lightest;
+    border-right: none;
+}
+
+.comment-content {
+    clear: both;
+}
+
+.comment-list li {
+    margin-top: 24px;
+    padding: 32px;
+}
+
+.comment-list li li {
+    margin-right: -32px;
+}
+
+.comment-respond input[type="email"],
+.comment-respond input[type="text"],
+.comment-respond input[type="url"] {
+    width: 50%;
+}
+
+.comment-respond label {
+    display: block;
+    margin-right: 12px;
+}
+
+.entry-comments .comment-author {
+    margin-bottom: 0;
+}
+
+.entry-pings .reply {
+    display: none;
+}
+
+.bypostauthor {
+}
+
+.form-allowed-tags {
+    background-color: $color-bg-base;
+    font-size: $font-size-h6;
+    padding: 24px;
+}

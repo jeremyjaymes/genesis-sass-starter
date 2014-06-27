@@ -1,0 +1,163 @@
+/*
+Site Navigation
+---------------------------------------------------------------------------------------------------- */
+.genesis-nav-menu {
+    clear: both;
+    font-size: $font-size-h6;
+    line-height: 1;
+    width: 100%;
+
+    @include breakpoint('medium') {
+        text-align: center;
+    }
+}
+
+.genesis-nav-menu .menu-item {
+    display: inline-block;
+    text-align: left;
+}
+
+.genesis-nav-menu li {
+    @include breakpoint('medium') {
+        float: none;
+    }
+}
+
+.genesis-nav-menu a {
+    color: $color-link-menu;
+    display: block;
+    padding: 30px 24px;
+
+    @include breakpoint('medium') {
+        padding: 20px 16px;
+    }
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+    color: $color-link-menu-hover;
+}
+
+.genesis-nav-menu .sub-menu {
+    left: -9999px;
+    opacity: 0;
+    position: absolute;
+    @include transition (opacity, 0.4s, ease-in-out);
+    width: 200px;
+    z-index: 99;
+}
+
+.genesis-nav-menu .sub-menu a {
+    background-color: $color-link-bg-submenu;
+    border: 1px solid $color-border-light;
+    border-top: none;
+    font-size: $font-size-smaller;
+    padding: 20px;
+    position: relative;
+    width: 200px;
+}
+
+.genesis-nav-menu .sub-menu .sub-menu {
+    margin: -55px 0 0 199px;
+}
+
+.genesis-nav-menu .menu-item:hover {
+    position: static;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+    left: auto;
+    opacity: 1;
+}
+
+.genesis-nav-menu > .first > a {
+    padding-left: 0;
+
+    @include breakpoint('medium') {
+        padding: 20px 16px;
+    }
+}
+
+.genesis-nav-menu > .last > a {
+    padding-right: 0;
+
+    @include breakpoint('medium') {
+        padding: 20px 16px;
+    }
+}
+
+.genesis-nav-menu > .right {
+    color: $color-font-lightest;
+    float: right;
+    list-style-type: none;
+    padding: 30px 0;
+}
+
+.genesis-nav-menu > .right > a {
+    display: inline;
+    padding: 0;
+}
+
+.genesis-nav-menu li.right {
+    @include breakpoint('medium') {
+        display: none;
+    }
+}
+
+.genesis-nav-menu > .rss > a {
+    margin-left: 48px;
+}
+
+.genesis-nav-menu > .search {
+    padding: 10px 0 0;
+}
+
+/* Site Header Navigation
+--------------------------------------------- */
+
+.site-header .sub-menu {
+    border-top: 1px solid $color-border-light;
+}
+
+.site-header .sub-menu .sub-menu {
+    margin-top: -56px;
+}
+
+.site-header .genesis-nav-menu li li {
+    margin-left: 0;
+}
+
+/* Primary Navigation
+--------------------------------------------- */
+
+.nav-primary {
+    background-color: $color-bg-nav-primary;
+}
+
+.nav-primary .genesis-nav-menu a {
+    color: $color-font-lightest;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a {
+    color: $color-link-menu;
+}
+
+.nav-primary .genesis-nav-menu a:hover,
+.nav-primary .genesis-nav-menu .current-menu-item > a,
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+    color: $color-link-base;
+}
+
+/* Secondary Navigation
+--------------------------------------------- */
+
+.nav-secondary {
+    background-color: $color-bg-header;
+}
+
+.site-header ul.genesis-nav-menu {
+    @include breakpoint('medium') {
+        float:none;
+    }
+}

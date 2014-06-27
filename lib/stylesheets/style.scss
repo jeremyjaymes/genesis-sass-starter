@@ -1,0 +1,68 @@
+/*
+    Theme Name: Genesis Sass Starter
+    Description: Starter child theme for the Genesis Framework built with Sass and Grunt. Based on Genesis Sample. 
+    Author: jeremyjaymes
+    Author URI: http://jeremyjaymes.com
+    Version: 0.5.0
+ 
+    Tags: sass
+ 
+    Template: genesis
+    Template Version: 2.1.0-dev
+ 
+    License: GPL-2.0+
+    License URI: http://www.opensource.org/licenses/gpl-license.php
+*/
+
+// -------------------------------------------------------------------------------------------------
+// Base Imports
+// -------------------------------------------------------------------------------------------------
+
+@import "helpers/variables";
+@import "helpers/mixins";
+
+/*
+HTML5 Reset
+---------------------------------------------------------------------------------------------------- */
+@import "base/normalize";
+
+/*
+Defaults
+---------------------------------------------------------------------------------------------------- */
+@import "base/helpers";
+@import "base/typography";
+
+
+@import "components/objects";
+@import "components/gallery";
+@import "components/forms";
+@import "components/tables";
+
+/*
+Structure and Layout
+---------------------------------------------------------------------------------------------------- */
+@import "layouts/containers";
+@import "layouts/columns";
+@import "layouts/grid";
+
+/*
+Common Classes
+---------------------------------------------------------------------------------------------------- */
+@import "components/common";
+
+/*
+Widgets
+---------------------------------------------------------------------------------------------------- */
+@import "components/widgets";
+
+/*
+Plugins
+---------------------------------------------------------------------------------------------------- */
+@import "components/plugins";
+
+@import "components/header";
+@import "components/navigation";
+@import "components/content";
+@import "components/sidebars";
+@import "components/footer";
+

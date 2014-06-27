@@ -1,0 +1,113 @@
+/*
+Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+    background-color: $color-bg-header;
+    min-height: 160px;
+
+    @include breakpoint('small') {
+        padding: 0;
+    }
+
+    .wrap {
+        padding: 40px 0;
+
+        @include breakpoint('medium') {
+            padding: 20px 5%;
+        }
+    }
+
+    .title-area {
+        @include breakpoint('medium') {
+            text-align: center;
+        }
+    }
+}
+
+/* Title Area
+--------------------------------------------- */
+
+.title-area {
+    float: left;
+    padding: 10px 0;
+    width: 360px;
+
+    @include breakpoint('large') {
+        width: 300px;
+    }
+
+    @include breakpoint('medium') {
+        width: 100%;
+    }
+}
+
+.header-full-width .title-area {
+    width: 100%;
+}
+
+.site-title {
+    font-size: $font-size-site-title;
+    font-weight: 400;
+    line-height: 1.2;
+
+    @include breakpoint('medium') {
+        text-align: center;
+    }
+}
+
+.site-title a,
+.site-title a:hover {
+    color: $color-link-site-title;
+}
+
+.header-image .site-title > a {
+    background: url(images/logo.png) no-repeat left;
+    float: left;
+    min-height: 60px;
+    width: 100%;
+}
+
+.header-image .title-area {
+    @include breakpoint('medium') {
+            background-position: center top;
+    }
+}
+
+.site-description {
+    font-size: $font-size-h6;
+    font-weight: 300;
+    line-height: 1.5;
+
+    @include breakpoint('medium') {
+        text-align: center;
+    }
+}
+
+.site-description,
+.site-title {
+    margin-bottom: 0;
+}
+
+.header-image .site-description,
+.header-image .site-title {
+    display: block;
+    text-indent: -9999px;
+}
+
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+    float: right;
+    text-align: right;
+    width: 800px;
+
+    @include breakpoint('large') {
+        width: 620px;
+    }
+
+    @include breakpoint('medium') {
+        width: 100%;
+    }
+}

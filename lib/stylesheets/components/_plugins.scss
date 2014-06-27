@@ -1,0 +1,48 @@
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget,
+.enews-widget .widget-title {
+    color: #fff;
+}
+
+.sidebar .widget.enews-widget {
+    background-color: #333;
+
+    @include breakpoint('small') {
+        padding: 40px;
+    }
+}
+
+.enews-widget input,
+.enews-widget input:focus {
+    border: 1px solid $color-border-darkest;
+}
+
+.enews-widget input {
+    font-size: $font-size-h6;
+    margin-bottom: 16px;
+}
+
+.enews-widget input[type="submit"] {
+    background-color: #e5554e;
+    color: #fff;
+    margin: 0;
+    width: 100%;
+}
+
+.enews-widget input:hover[type="submit"] {
+    background-color: #fff;
+    color: $color-font-base;
+}
+
+.enews form + p {
+    margin-top: 24px;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+#wpstats {
+    display: none;
+}

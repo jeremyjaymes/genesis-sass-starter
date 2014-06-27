@@ -1,0 +1,129 @@
+/* Typographical Elements
+--------------------------------------------- */
+
+body {
+    background-color: $color-bg-base;
+    color: $color-font-base;
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    margin: 0;
+
+    @include breakpoint('small') {
+        background-color: #fff;
+        font-size: $font-size-h6;
+    }
+}
+
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.button,
+.gallery img {
+    @include transition(all, 0.1s, ease-in-out);
+}
+
+::-moz-selection {
+    background-color: $color-font-base;
+    color: #fff;
+}
+
+::selection {
+    background-color: $color-font-base;
+    color: #fff;
+}
+
+a {
+    color: $color-link-base;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-link-hover;
+}
+
+p {
+    margin: 0 0 28px;
+    padding: 0;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+b,
+strong {
+    font-weight: $font-weight-bold;
+}
+
+blockquote,
+cite,
+em,
+i {
+    font-style: italic;
+}
+
+blockquote {
+    margin: 40px;
+}
+
+blockquote::before {
+    content: "\201C";
+    display: block;
+    font-size: $font-size-h2;
+    height: 0;
+    left: -20px;
+    position: relative;
+    top: -10px;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-font-base;
+    font-family: $font-family-base;
+    font-weight: $font-weight-normal;
+    line-height: 1.2;
+    margin: 0 0 10px;
+}
+
+h1 {
+    font-size: $font-size-h1;
+}
+
+h2 {
+    font-size: $font-size-h2;
+}
+
+h3 {
+    font-size: $font-size-h3;
+}
+
+h4 {
+    font-size: $font-size-h4;
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
+}

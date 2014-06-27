@@ -1,0 +1,165 @@
+/* Avatar
+--------------------------------------------- */
+
+.avatar {
+    float: left;
+}
+
+.alignleft .avatar,
+.author-box .avatar {
+    margin-right: 24px;
+}
+
+.alignright .avatar {
+    margin-left: 24px;
+}
+
+.comment .avatar {
+    margin: 0 16px 24px 0;
+}
+
+/* Genesis
+--------------------------------------------- */
+
+.breadcrumb {
+    margin-bottom: 20px;
+}
+
+.archive-description,
+.author-box {
+    background-color: $color-bg-content;
+    font-size: $font-size-h6;
+    margin-bottom: 40px;
+    padding: 40px;
+
+    @include breakpoint('small') {
+        padding: 0;
+    }
+}
+
+.author-box-title {
+    font-size: $font-size-h6;
+    margin-bottom: 4px;
+}
+
+.archive-description p:last-child,
+.author-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+    overflow: hidden;
+}
+
+.site-header .search-form {
+    float: right;
+    margin-top: 12px;
+
+    @include breakpoint('medium') {
+        float: none;
+        margin: 16px auto;
+        text-align: center;
+    }
+}
+
+.entry-content .search-form,
+.site-header .search-form {
+    width: 50%;
+}
+
+.genesis-nav-menu .search input[type="submit"],
+.widget_search input[type="submit"] {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Titles
+--------------------------------------------- */
+
+.archive-title {
+    font-size: $font-size-h4;
+}
+
+.entry-title {
+    font-size: $font-size-h1;
+}
+
+.entry-title a,
+.sidebar .widget-title a {
+    color: $color-font-base;
+}
+
+.entry-title a:hover {
+    color: $color-link-base;
+}
+
+.widget-title {
+    font-size: $font-size-base;
+    margin-bottom: 20px;
+}
+
+.footer-widgets .widget-title {
+    color: $color-font-lightest;
+}
+
+/* WordPress
+--------------------------------------------- */
+
+.alignleft {
+    float: left;
+    text-align: left;
+}
+
+.alignright {
+    float: right;
+    text-align: right;
+}
+
+a.alignleft,
+a.alignright {
+    max-width: 100%;
+}
+
+img.centered,
+.aligncenter {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+img.alignnone,
+.alignnone {
+    margin-bottom: 12px;
+}
+
+a.alignleft,
+img.alignleft,
+.wp-caption.alignleft {
+    margin: 0 24px 24px 0;
+}
+
+a.alignright,
+img.alignright,
+.wp-caption.alignright {
+    margin: 0 0 24px 24px;
+}
+
+.wp-caption-text {
+    font-size: $font-size-smaller;
+    font-weight: 700;
+    text-align: center;
+}
+
+.entry-content p.wp-caption-text {
+    margin-bottom: 0;
+}
+
+.sticky {
+}
