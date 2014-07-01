@@ -112,6 +112,14 @@
 
 /* WordPress
 --------------------------------------------- */
+a.aligncenter img {
+    display: block;
+    margin: 0 auto;
+}
+
+a.alignnone {
+    display: inline-block;
+}
 
 .alignleft {
     float: left;
@@ -124,6 +132,7 @@
 }
 
 a.alignleft,
+a.alignnone,
 a.alignright {
     max-width: 100%;
 }

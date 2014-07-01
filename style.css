@@ -396,7 +396,12 @@ video,
   max-width: 100%;
 }
 
-.featured-content img {
+img {
+  height: auto;
+}
+
+.featured-content img,
+.gallery img {
   width: auto;
 }
 
@@ -910,6 +915,15 @@ Common Classes
 
 /* WordPress
 --------------------------------------------- */
+a.aligncenter img {
+  display: block;
+  margin: 0 auto;
+}
+
+a.alignnone {
+  display: inline-block;
+}
+
 .alignleft {
   float: left;
   text-align: left;
@@ -921,6 +935,7 @@ Common Classes
 }
 
 a.alignleft,
+a.alignnone,
 a.alignright {
   max-width: 100%;
 }

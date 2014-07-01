@@ -10,6 +10,11 @@ video,
     max-width: 100%;
 }
 
-.featured-content img {
+img {
+    height: auto;
+}
+
+.featured-content img,
+.gallery img {
     width: auto;
 }
